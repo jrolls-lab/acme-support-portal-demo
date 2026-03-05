@@ -32,8 +32,8 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-gray-900">Support</h4>
             <ul className="mt-3 space-y-2 text-sm text-gray-500">
-              <li><a href="#broken" className="hover:text-gray-700">Need help?</a></li>
-              <li><a href="/broken-link" className="hover:text-gray-700">Contact support</a></li>
+              <li><a href="/help" className="hover:text-gray-700">Questions? We’re here to help.</a></li>
+              <li><a href="/help" className="hover:text-gray-700">Reach our support team</a></li>
               <li><a href="/status" className="hover:text-gray-700">System status</a></li>
             </ul>
           </div>
