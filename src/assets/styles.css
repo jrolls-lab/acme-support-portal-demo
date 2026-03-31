@@ -60,6 +60,21 @@ main { max-width: 960px; margin: 2rem auto; padding: 0 2rem; }
 
 .ticket-title { font-weight: 600; font-size: 1rem; }
 
+.priority-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.priority-low { background: #065f46; color: #6ee7b7; }
+.priority-medium { background: #854d0e; color: #fde047; }
+.priority-high { background: #9a3412; color: #fdba74; }
+.priority-critical { background: #991b1b; color: #fca5a5; }
+
 .ticket-meta {
   display: flex;
   gap: 1rem;
@@ -95,7 +110,7 @@ dialog label {
   color: #94a3b8;
 }
 
-dialog input, dialog textarea {
+dialog input, dialog textarea, dialog select {
   display: block;
   width: 100%;
   margin-top: 0.25rem;
