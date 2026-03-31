@@ -1,0 +1,7 @@
+name = "acme-support-portal-demo"
+main = "src/index.ts"
+compatibility_date = "2025-03-31"
+
+[assets]
+directory = "./src/assets"
+binding = "ASSETS"
