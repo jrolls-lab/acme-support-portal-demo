@@ -16,6 +16,7 @@ async function loadTickets() {
     <div class="ticket-card">
       <div class="ticket-header">
         <span class="ticket-title">${t.title}</span>
+        <span class="priority-badge priority-${t.priority}">${t.priority}</span>
       </div>
       <div class="ticket-description">${t.description}</div>
       <div class="ticket-meta">
@@ -39,6 +40,7 @@ document.getElementById("ticket-form").addEventListener("submit", async (e) => {
   const body = {
     title: form.title.value,
     description: form.description.value,
+    priority: form.priority.value,
   };
 
   await fetch(API + "/api/tickets", {
