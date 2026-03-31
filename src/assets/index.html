@@ -10,7 +10,7 @@
   <div id="app">
     <header>
       <div class="header-inner">
-        <h1>ACME Support Portal</h1>
+        <h1>🛠 ACME Support Portal</h1>
         <button id="new-ticket-btn" class="btn btn-primary">+ New Ticket</button>
       </div>
     </header>
@@ -21,6 +21,14 @@
           <h2>New Support Ticket</h2>
           <label>Title <input type="text" name="title" required /></label>
           <label>Description <textarea name="description" rows="4" required></textarea></label>
+          <label>Priority
+            <select name="priority">
+              <option value="low">🟢 Low</option>
+              <option value="medium" selected>🟡 Medium</option>
+              <option value="high">🟠 High</option>
+              <option value="critical">🔴 Critical</option>
+            </select>
+          </label>
           <div class="form-actions">
             <button type="button" id="cancel-btn" class="btn">Cancel</button>
             <button type="submit" class="btn btn-primary">Submit</button>
